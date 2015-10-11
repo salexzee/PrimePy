@@ -1,18 +1,23 @@
+#################
+# PRIME
+# Copyright 2015
+# License: MIT
+# Author: Sam Webb
+
+
 # This is the main checker for prime numbers.
-# If this starts to get longer, it should be
-# broken up into smaller chunks.
 # 
 # Example:
-# >>> check_prime(5)
+# >>> isPrime(5)
 # True
-# >>> check_prime(6)
+# >>> isPrime(6)
 # False
 #
 # @argument num == int: The number you want to check
 #
 # @returns bool: True if prime, False if nots
 #
-def check_prime(num):
+def isPrime(num):
   # Set original prime variable to True
   prime = True
   # Auto return 2 as prime
@@ -25,7 +30,7 @@ def check_prime(num):
     prime = False
     return prime
 
-  while i < half and i < 10:
+  while i < half and i < 1299:
     if num % i == 0:
       prime = False
       return prime
@@ -44,7 +49,7 @@ def check_prime(num):
 # 3 - 99999999.
 #
 # Example:
-# >>> check = check_all(3,6)
+# >>> check = checkAll(3,6)
 # [[3, True], [4, False], [5, True], [6, False]]
 #
 # @argument start == int: First number to be checked
@@ -54,7 +59,7 @@ def check_prime(num):
 # @return int: The number checked
 # @return bool: True if prime, False if not
 #
-def check_all(start, finish, watch=False):
+def checkAll(start, finish, watch=False):
   i = start
   checks = []
   while i < (finish + 1):
@@ -65,10 +70,10 @@ def check_all(start, finish, watch=False):
   return checks
 
 
-# Used to display the return value of check_all() in an
+# Used to display the return value of checkAll() in an
 # easily readable format
 #
-# @argument check == list: A list returned from check_all()
+# @argument check == list: A list returned from checkAll()
 #
 # @return NO RETURN VALUE
 def display(check, primes=False):
