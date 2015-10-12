@@ -46,7 +46,7 @@ def isPrime(num):
 # numbers, it is possible that your terminal window will
 # crash. For now, try to keep your range low. My Macbook
 # Pro terminal, running zsh, crashed with the range
-# 3 - 99999999.
+# 3 - 99999999. I have not tried any other big checks yet.
 #
 # Example:
 # >>> check = checkAll(3,6)
@@ -63,9 +63,9 @@ def checkAll(start, finish, watch=False):
   i = start
   checks = []
   while i < (finish + 1):
-    checks.append([i, check_prime(i)])
+    checks.append([i, isPrime(i)])
     if watch == True:
-      print(str(i) + ": " + str(check_prime(i)))
+      print(str(i) + ": " + str(isPrime(i)))
     i = i + 1
   return checks
 
