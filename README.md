@@ -9,11 +9,12 @@ It is extremely easy to use PrimePy.
 
 ----------
 
-*isPrime*
+**isPrime**
 
 Used to check if a number is prime or not.
 
 Args: (num)
+
 ArgsType: (int)
 
 - @num: The number you want to check.
@@ -28,11 +29,12 @@ True
 ----------
 
 
-*checkAll*
+**checkAll**
 
 Runs the isPrime method on every number in the specified range. Be careful not to put a range too large or your terminal/application may crash.
 
 Args: (start, finish, [watch])
+
 ArgsType: (int, int, [bool])
 
 - @start: The starting number for your check. (included)
@@ -45,6 +47,15 @@ ArgsType: (int, int, [bool])
 ```
 
 ----------
+
+**display**
+
+Accepts a checkAll formatted list and beautifies it for the terminal.
+
+```python
+>>> check = check(All(3,5))
+>>> display(check) # Check output in terminal window
+```
 
 
 ##Tests
