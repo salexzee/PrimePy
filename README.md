@@ -7,6 +7,16 @@ This is just a repository for me to mess around with prime numbers.
 
 It is extremely easy to use PrimePy.
 
+First make sure you import PrimePy:
+
+```python
+# To put all PrimePy variables in global scope (dangerous)
+from prime import *
+
+# To keep everything namespaced under prime (safe)
+import prime
+```
+
 ----------
 
 **isPrime**
