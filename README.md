@@ -57,8 +57,22 @@ Accepts a checkAll formatted list and beautifies it for the terminal.
 >>> display(check) # Check output in terminal window
 ```
 
+----------
+
+**bigPrime**
+
+Returns a large prime number.
+
+```python
+>>> bigPrime()
+208076533816577
+```
+
 
 ##Tests
+
+To run tests, navigate to the `prime` directory in your terminal and execute the following command:
+
 ```
 $ python tests.py
 ```
