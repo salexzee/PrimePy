@@ -5,6 +5,11 @@
 # Author: Sam Webb
 
 
+# IMPORTS
+from random import random
+from math import ceil
+
+
 # This is the main checker for prime numbers.
 # 
 # Example:
@@ -80,6 +85,7 @@ def display(check, primes=False):
   if type(check) == list:
     length = len(check)
     i = 0
+    print('-' * 15)
     while i < length:
       if check[i][1] == True:
         print(str(check[i][0]) + ' is a prime number.')
@@ -92,4 +98,19 @@ def display(check, primes=False):
   else:
     raise TypeError('display() requires a list of lists with an example format of: [[int, bool], [int, bool]]')
   return
+
+
+# Used to return a large prime number
+#
+# No arguments
+#
+# @return int: The large prime number
+def bigPrime():
+  prime = False
+  check = 0
+  while prime == False:
+    check = int(ceil(random() * 1000000000000000))
+    if isPrime(check):
+      prime = True
+  return check
 
