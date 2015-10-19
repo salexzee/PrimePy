@@ -63,7 +63,7 @@ ArgsType: (int, int, [bool])
 Accepts a checkAll formatted list and beautifies it for the terminal.
 
 ```python
->>> check = check(All(3,5))
+>>> check = checkAll(3,5)
 >>> display(check) # Check output in terminal window
 ```
 
