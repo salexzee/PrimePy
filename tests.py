@@ -16,5 +16,9 @@ class TestPrimeMethods(unittest.TestCase):
   def test_big_prime(self):
     self.assertTrue(prime.isPrime(prime.bigPrime()))
 
+  def test_prime_choice(self):
+    self.assertTrue(prime.isPrime(prime.primeChoice(5)))
+    self.assertTrue(len(str(prime.primeChoice(5))) == 5)
+
 if __name__ == '__main__':
   unittest.main()

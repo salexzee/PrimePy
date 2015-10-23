@@ -114,3 +114,20 @@ def bigPrime():
       prime = True
   return check
 
+# Returns a prime number of the specified size
+#
+# @argument size == int: How large you want the returned prime number
+#
+# @return int: The prime number
+def primeChoice(size=5):
+  if type(size) != int:
+    raise TypeError('primeChoice() requires an integer for an argument')
+  prime = False
+  check = 0
+  newsize = int('1' + '0' * size)
+  while prime == False:
+    check = int(ceil(random() * newsize))
+    if isPrime(check):
+      prime = True
+  return check
+

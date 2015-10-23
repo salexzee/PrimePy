@@ -58,6 +58,23 @@ ArgsType: (int, int, [bool])
 
 ----------
 
+**primeChoice**
+
+Returns a prime number which matches the size specified by the user. *Warning: The larger the number, the longer it will take to find a prime number.*
+
+Args: (size=[default 5])
+
+ArgsType: (int)
+
+- @size: The length you want your prime number to be. (default is 5)
+
+```python
+>>>primeChoice(10)
+3038527469
+```
+
+----------
+
 **display**
 
 Accepts a checkAll formatted list and beautifies it for the terminal.
