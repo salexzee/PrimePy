@@ -125,9 +125,14 @@ def primeChoice(size=5):
   prime = False
   check = 0
   newsize = int('1' + '0' * size)
+  check = int(ceil(random() * newsize))
   while prime == False:
-    check = int(ceil(random() * newsize))
-    if len(str(check)) == size and isPrime(check):
-      prime = True
-  return check
+    if len(str(check)) == size:
+      if isPrime(check):
+        prime = True
+      else:
+        check+=1
+    else:
+      check = int(ceil(random() * newsize))
+  return int(check)
 

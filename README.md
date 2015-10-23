@@ -60,7 +60,7 @@ ArgsType: (int, int, [bool])
 
 **primeChoice**
 
-Returns a prime number which matches the size specified by the user. *Warning: The larger the number, the longer it will take to find a prime number.*
+Returns a prime number which matches the size specified by the user. Really large numbers return a `long` integer which is denoted by an uppercase `L` at the end of the returned number. You can see an example below.
 
 Args: (size=[default 5])
 
@@ -71,6 +71,9 @@ ArgsType: (int)
 ```python
 >>>primeChoice(10)
 3038527469
+
+>>>primeChoice(100)
+6103143511541228984402255519885099367572625065625579423598295162581554697203955830436556551892238347L
 ```
 
 ----------
